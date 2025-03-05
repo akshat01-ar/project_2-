@@ -1,5 +1,8 @@
 import qrcode as qr
-img = qr.make("https://www.netflix.com/browse")
-img.save("fist_qr.png")
+name = input("give  name of qr")
+js = input("enter link Which QR has to be made")
+img = qr.make(js)
+img.save(f"QR_{name}.png")
+
 
     
